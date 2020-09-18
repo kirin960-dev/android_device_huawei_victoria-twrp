@@ -1,0 +1,2 @@
+allow recovery rootfs:dir { write };
+allow recovery mtp_device:chr_file { ioctl };
