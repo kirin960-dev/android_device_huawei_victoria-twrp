@@ -16,8 +16,8 @@
 
 # Kernel
 PRODUCT_COPY_FILES += \
-    device/huawei/anne/dummykernel:kernel
-	
+    device/huawei/victoria/dummykernel:kernel
+
 # Usb
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=manufacture,adb,mtp \

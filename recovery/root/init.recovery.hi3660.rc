@@ -1,4 +1,4 @@
-import /init.recovery.hi6250.usb.rc
+import /init.recovery.hi3660.usb.rc
 
 on fs
     start fixlinks

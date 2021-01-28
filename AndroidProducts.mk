@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_anne.mk
+    $(LOCAL_DIR)/omni_victoria.mk

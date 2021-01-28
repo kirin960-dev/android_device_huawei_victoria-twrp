@@ -16,4 +16,4 @@
 
 export ALLOW_MISSING_DEPENDENCIES=true
 
-add_lunch_combo omni_anne-eng
+add_lunch_combo omni_victoria-eng

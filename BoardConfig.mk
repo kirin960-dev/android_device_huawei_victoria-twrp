@@ -1,7 +1,7 @@
-DEVICE_PATH := device/huawei/anne
+DEVICE_PATH := device/huawei/victoria
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := anne,hi6250
+TARGET_OTA_ASSERT_DEVICE := victoria,hi3660
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := KIRIN
@@ -28,7 +28,7 @@ TARGET_2ND_CPU_VARIANT := generic
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/anne/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/victoria/custombootimg.mk
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x8000 --ramdisk_offset 0x01000000 --tags_offset 0x0100
 
 # File System
