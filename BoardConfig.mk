@@ -36,6 +36,7 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 33554432
 TARGET_EXFAT_DRIVER := exfat
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
+BOARD_HAS_LARGE_FILESYSTEM := true
 
 # Fstab and init.rc files
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
@@ -60,7 +61,23 @@ TW_CUSTOM_BATTERY_PATH := /sys/class/power_supply/Battery
 TARGET_USES_LOGD := true
 TWRP_INCLUDE_LOGCAT := true
 TW_USE_NEW_MINADBD := true
+#TW_INCLUDE_CRYPTO := true
 
 # Selinux
 SELINUX_IGNORE_NEVERALLOWS := true
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
+# SHRP
+SHRP_DEVICE_CODE := victoria
+SHRP_PATH := device/huawei/$(SHRP_DEVICE_CODE)
+SHRP_MAINTAINER := Giovix92
+SHRP_REC_TYPE := Normal
+SHRP_DEVICE_TYPE := A_Only
+SHRP_NO_SAR_AUTOMOUNT := true
+SHRP_REC := /dev/block/platform/ff3b0000.ufs/by-name/recovery_ramdisk
+SHRP_INTERNAL := /sdcard
+SHRP_EXTERNAL := /external_sd
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_EXPRESS := true
+SHRP_DARK := true
